@@ -1,0 +1,19 @@
+<div class="container">
+    <add-comment (onComment)="onComment($event)"></add-comment>
+    <br/>
+    <br/>
+
+    <div class="row" >        
+        <div class="col-xs-12" *ngFor="let comment of comments">
+            <div class="panel panel-default">
+                <p class="panel-body">
+                    {{comment.body}}
+                </p>
+                <div class="panel-footer text-center" (click)="goToComment(comment.id)">
+                    <span class="pull-left">{{comment.timeStamp |date:'medium'}}</span>                    
+                    <span class="pull-right">{{comment.username}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

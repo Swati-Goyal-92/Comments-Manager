@@ -1,0 +1,10 @@
+.container{
+    margin-top: 50px;
+}
+
+.panel-footer{
+    height: 35px;
+}
+.panel-footer:hover{
+    cursor: pointer;
+}
